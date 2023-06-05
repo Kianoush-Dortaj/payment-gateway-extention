@@ -1,0 +1,47 @@
+{
+  "name": "@substrate/burnr",
+  "version": "0.0.1",
+  "description": "A light-client-based, in-browser wallet for Substrate. It's meant to be quick and easy to use but less secure than other solutions.",
+  "author": "Parity Team <admin@parity.io>",
+  "license": "Apache-2.0",
+  "scripts": {
+    "prebuild": "yarn clean",
+    "build": "webpack",
+    "deep-clean": "yarn clean && rm -rf node_modules",
+    "clean": "rm -rf dist tsconfig.tsbuildinfo",
+    "dev": "yarn run clean && tsc -b & webpack serve --config webpack.config.js",
+    "test": "exit 0; #No tests",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "predeploy": "yarn run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paritytech/substrate-connect.git"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/icons": "^4.11.3",
+    "@material-ui/lab": "^4.0.0-alpha.61",
+    "@polkadot/api": "^10.5.1",
+    "@polkadot/api-augment": "^10.5.1",
+    "@polkadot/keyring": "^12.1.1",
+    "@polkadot/react-identicon": "^3.2.2",
+    "@polkadot/rpc-provider": "^10.5.1",
+    "@polkadot/types": "^10.5.1",
+    "@polkadot/util": "^12.1.1",
+    "@polkadot/util-crypto": "^12.1.1",
+    "@substrate/connect": "0.7.26",
+    "bn.js": "^5.2.1",
+    "qrcode.react": "^3.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-is": "^18.2.0",
+    "react-router": "^6.11.0",
+    "react-router-dom": "^6.11.0",
+    "regenerator-runtime": "^0.13.11",
+    "unique-names-generator": "^4.7.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.39.0"
+  }
+}

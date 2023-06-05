@@ -1,0 +1,12 @@
+yarn-error.log*
+.nyc_output/
+.chains/
+.eslintrc.cjs
+.eslintignore
+/coverage
+tsconfig.*
+extension-resolver.cjs
+jest.config*
+
+src/**/*
+fix-package-type.sh

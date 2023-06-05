@@ -1,0 +1,4 @@
+tsconfig.json
+tsconfig.*.json
+/src
+fix-package-type.sh
